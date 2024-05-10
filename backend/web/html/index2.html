@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/style2.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>User Details Page</title>
+</head>
+<body>
+    <div class="container">
+        <header>Employee Details</header>
+        <form action="http://127.0.0.1:4000/details_page" method="POST"> <!-- Assuming save_details.php handles saving data -->
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" name="fullname" placeholder="Enter Employee Name" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Staff Number</label>
+                            <input type="number" name="staffnumber" placeholder="Enter Employee Number" required maxlength="7">
+                        </div>
+                        <div class="input-field">
+                            <label>Location</label>
+                            <input type="text" name="location" placeholder="Enter Location" required>  
+                        </div>
+                    </div>
+                </div>
+                <div class="details mdf">
+                    <span class="title">MDF Details</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>New</label>
+                            <input type="number" name="newnumber" placeholder="Enter New Number" maxlength="9" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Old</label>
+                            <input type="number" name="oldnumber" placeholder="Enter Old Number" maxlength="9" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Remark</label>
+                            <input type="text" name="remark" placeholder="Enter Remark" required>  
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Save Details</button>
+        </form>
+    </div>
+</body>
+</html>

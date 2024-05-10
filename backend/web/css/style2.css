@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0,0,50,0.8), rgba(0,0,50,0.8)), url(./../html/SAIL_Logo.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  position: relative;
+  max-width: 900px;
+  border-radius: 6px;
+  padding: 30px;
+  margin: 0 15px;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.container header {
+  position: relative;  
+  font-size: 36px; /* Increased heading size */
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px; /* Added margin bottom for separation */
+}
+
+.container header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 3px;
+  width: 27px;
+  border-radius: 18px;
+  background-color: #4070f4;
+}
+
+.container form {
+  position: relative;
+  margin-top: 16px;
+  min-height: 490px;
+  background-color: #fff;
+  padding: 20px; /* Added padding for better spacing */
+  border-radius: 8px; /* Slightly increased border radius */
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1); /* Reduced box shadow */
+}
+
+.container form .details {
+  margin-top: 20px;
+}
+
+.container form .title {
+  margin-top: 16px; /* Removed the extra 0 */
+  font-size: 24px; /* Increased subheading size */
+  font-weight: 600;
+  color: #333;
+}
+
+.input-field {
+  margin-bottom: 15px;
+}
+
+.input-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px; /* Increased label font size */
+  font-weight: 500;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 10px; /* Increased input padding */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.input-field input:focus {
+  outline: none;
+  border-color: dodgerblue;
+}
